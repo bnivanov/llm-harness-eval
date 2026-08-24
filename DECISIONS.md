@@ -34,6 +34,14 @@ Format: date · decision · why · revisit when
 
 **Revisit:** Never for raw spend artifacts.
 
+## 2026-08-24 · Wave 1 is a Grok-model-driven harness comparison
+
+**Decision:** Wave 1 evaluates harness effect with Grok models held roughly fixed. Systems under test: **Grok Build**, **OMP / Oh My Pi**, **Cursor Grok**, and **Prime Agent** (try; Grok often needs `XAI_API_KEY`, SuperGrok OAuth may be incomplete). Optional follow-ons (Pi, Hermes, OpenCode, Amp) are not Wave 1 blockers. Claw-family forks and vibe app builders are out of scope for this wave.
+
+**Why:** Research question 1 is harness-not-model. Starting with one model family (Grok) isolates orchestration differences and matches available native/CLI surfaces. A broad multi-lab bake-off would confound model with harness.
+
+**Revisit:** After Wave 1 protocol exists and first pilots are logged; expand SUTs only if a listed optional harness is needed to interpret Grok-native results.
+
 ## 2026-08-24 · Heavy repo work via Cursor cloud agents
 
 **Decision:** All non-trivial development on `bnivanov/llm-harness-eval` is done by **Cursor cloud agents**. Harness Reviewer (Grok Bot) steers, scopes, dispatches, reviews results, and keeps light continuity files — it does not burn Bot quota on heavy coding.

@@ -8,4 +8,11 @@
 - OpenClaw is frequently framed as a **gateway/runtime**, not a pure coding harness — keep taxonomy clean in the candidate list.
 - Pi is repeatedly cited as a **minimal extensible** harness; Hermes as **learning / memory-oriented**; Amp as **distributed/remote** operator; Claude Code & Codex as leading terminal coding harnesses.
 
+## 2026-08-24 — Wave 1 operating constraints (pre-eval)
+
+- First scored wave is **Grok-native**: hold Grok roughly fixed, vary harness. Pointer: [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md).
+- **Prime Agent** is worth trying on Grok, but API-key `xai` (`XAI_API_KEY`) is the reliable path today; SuperGrok OAuth looks incomplete relative to Hermes / OMP.
+- Personal billing / token-spend artifacts remain local-only; Wave 1 cost metrics, if any, come from harness-reported usage — not private dashboards.
+
 *(Pilot eval learnings go below this line.)*
+
