@@ -26,6 +26,14 @@ Format: date · decision · why · revisit when
 
 **Revisit:** When repo is created — switch “source of truth” note here.
 
+## 2026-08-24 · Personal spend stays out of the public repo
+
+**Decision:** Keep all personal token / billing spend data **out of** the public GitHub tree. Do not commit `TOKEN-SPEND.md`, usage-dashboard screenshots, or usage CSVs. Track spend only in private/local project copies.
+
+**Why:** Public research repo should not expose account billing UI or private usage exports.
+
+**Revisit:** Never for raw spend artifacts.
+
 ## 2026-08-24 · Heavy repo work via Cursor cloud agents
 
 **Decision:** All non-trivial development on `bnivanov/llm-harness-eval` is done by **Cursor cloud agents**. Harness Reviewer (Grok Bot) steers, scopes, dispatches, reviews results, and keeps light continuity files — it does not burn Bot quota on heavy coding.
