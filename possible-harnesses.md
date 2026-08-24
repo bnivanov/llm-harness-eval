@@ -146,7 +146,7 @@ Prioritize for native harness evals (sources: zero8.dev State of Agentic Harness
 | Superpowers | skills layer | Not a coding harness; track as skills layer |
 | Aider | harness | Already on chart; keep as git-native baseline |
 | OpenCode | harness | Already on chart; major OSS star count |
-| Amp, Hermes, Pi | harness | Already on / mapped from chart |
+| Amp, Hermes, Pi | harness | Already on / mapped from chart; all three are Wave 1 SUTs (Amp = matrix expansion, not Grok-only) |
 
 ## D. Taxonomy tags (for filtering)
 
