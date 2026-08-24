@@ -26,10 +26,10 @@ Format: date · decision · why · revisit when
 
 **Revisit:** When repo is created — switch “source of truth” note here.
 
-## 2026-08-24 · Personal token spend stays out of the public repo
+## 2026-08-24 · Heavy repo work via Cursor cloud agents
 
-**Decision:** Keep all personal token / billing spend data **out of** the public GitHub tree. Do not commit `TOKEN-SPEND.md`, usage-dashboard screenshots, or usage CSVs. Track spend only in private/local project copies. Document this in README and `.gitignore`.
+**Decision:** All non-trivial development on `bnivanov/llm-harness-eval` is done by **Cursor cloud agents**. Harness Reviewer (Grok Bot) steers, scopes, dispatches, reviews results, and keeps light continuity files — it does not burn Bot quota on heavy coding.
 
-**Why:** Spend figures and billing UI screenshots are personal account data; they are not needed for reproducible harness evaluation and should not ship with public findings.
+**Why:** Conserve Grok Bot included usage; cloud agents are the stronger coding path for the repo.
 
-**Revisit:** Only if we later publish **anonymized aggregate** cost metrics from controlled evals (no personal dashboard dumps).
+**Revisit:** Only if Bobby explicitly wants Bot-side edits for a small continuity tweak.
