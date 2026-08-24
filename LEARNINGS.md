@@ -18,4 +18,13 @@ Pointer: [`waves/wave-1-adversarial-review.md`](waves/wave-1-adversarial-review.
 - Hermes can delegate to Grok Build; nested SUT. Cursor is both SUT and the cloud-agent factory for this repo.
 - Publishable Wave 1 is Track A: **Grok Build × Pi × OMP**, pinned slug/auth, three tasks, headless. Everything else is Track B (lab stacks) or Track C (experimental / IDE / RLM). OpenCode belongs on the Grok BYOK waitlist ahead of FX/Amp.
 
+## 2026-08-24 — Subscription vs BYOK is a second axis (not a quality ranking)
+
+Pointer: [`landscape/agentic-tools-subscription-vs-byok.md`](landscape/agentic-tools-subscription-vs-byok.md).
+
+- Devin is plan-quota / on-demand / enterprise **ACU** — not classic BYOK.
+- OpenClaw is a **runtime-gateway**, not a native coding harness.
+- SuperGrok OAuth and `XAI_API_KEY` are different ledgers; same for Claude `/login` vs `ANTHROPIC_API_KEY` and ChatGPT Codex vs API key.
+- Cursor Grok (plan SKU) ≠ Grok Build CLI ≠ Grok Bot.
+
 *(Pilot eval learnings go below this line.)*
