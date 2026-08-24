@@ -1,14 +1,20 @@
-# Wave 1 — Grok-native harness evaluation
+# Wave 1 — Grok-native harness evaluation (plus matrix expansion)
 
 **Status:** setup (no scored runs)  
 **Opened:** 2026-08-24  
-**Control:** hold Grok models roughly fixed; vary the harness
+**Control:** Grok-native cluster — hold Grok models roughly fixed, vary harness. Matrix expansion (Amp, FX, Codex CLI) uses each harness’s **native routing**; do not treat those three as Grok-only.
 
 ## Goal
 
-Measure **harness effect** on Grok-family coding performance. Keep the model family as constant as practical and change the orchestration layer (tool loop, edits, context, auth, permissions). This wave answers: *same Grok, different harness — what changes?*
+Measure **harness effect**. The original Wave 1 question remains: *same Grok, different harness — what changes?* That applies to the Grok-capable cluster below.
 
-It is not a general model bake-off and not a ranking of every CLI on the candidate list.
+Amp, FX, and Codex CLI were added as SUTs to widen the matrix (install requested 2026-08-24). They are **not** claimed as Grok-locked:
+
+- **Codex CLI** is primarily OpenAI-native
+- **Amp** has its own model routing
+- **FX** typically authenticates via Vercel / Vercel AI Gateway
+
+Record provider + model slug per run. Do not collapse expansion SUTs into the Grok-fixed contrast.
 
 ## Systems under test (Wave 1)
 
@@ -20,21 +26,24 @@ It is not a general model bake-off and not a ranking of every CLI on the candida
 | **Cursor Grok** | Cursor IDE agent | Cursor IDE, Grok models in agent mode | IDE-embedded coding loop (this surface), not a second CLI install. |
 | **Hermes Agent** | Nous Research CLI | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh \| bash` → `hermes` | First-class SUT. Docs report SuperGrok / xAI OAuth (`xai-oauth`). Sources: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent), [xAI Grok OAuth guide](https://hermes-agent.nousresearch.com/docs/guides/xai-grok-oauth). Install/auth not yet recorded. |
 | **Prime Agent** | Prime Intellect CLI | try: `curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh \| sh` → `prime-agent` | Include if Grok routing works. Grok often needs `XAI_API_KEY`; SuperGrok OAuth may be incomplete (community `xai-oauth` work not clearly landed). |
+| **Amp** | ampcode.com CLI | `curl -fsSL https://ampcode.com/install.sh \| bash` → `amp` | **Matrix expansion.** Own model routing (Sourcegraph lineage). [ampcode.com](https://ampcode.com). Not Grok-only. Install/auth not yet recorded. |
+| **FX** | Vercel Labs tiny Zig CLI | `curl -fsSL https://fx.sh/setup.sh \| bash` → `fx` | **Matrix expansion.** [vercel-labs/fx](https://github.com/vercel-labs/fx) / [fx.sh](https://fx.sh). Auth typically `fx login` (Vercel) or AI Gateway key (`AI_GATEWAY_API_KEY` / `fx setup`). Not Grok-only. Install/auth not yet recorded. |
+| **Codex CLI** | OpenAI terminal harness | `curl -fsSL https://chatgpt.com/codex/install.sh \| sh` → `codex` | **Cross-lab baseline** (OpenAI-native / ChatGPT-plan auth). Useful OpenAI-stack comparator; not a Grok-native SUT. [openai/codex](https://github.com/openai/codex). Install/auth not yet recorded. |
 
-Auth, binary version, and exact Grok model slug are **run metadata**, not results. Record them per session in `evaluation-log.md` once runs start.
+Auth, binary version, and **actual** model/provider routing are **run metadata**, not results. Record them per session in `evaluation-log.md` once runs start. For Grok-native SUTs, pin or note the Grok slug; for Amp / FX / Codex, record native routing honestly.
 
 ## Optional next (not Wave 1 blockers)
 
-These are plausible Grok-capable follow-ons. Do not delay Wave 1 on them:
+These are plausible follow-ons. Do not delay Wave 1 on them:
 
 - **OpenCode** — large OSS terminal agent
-- **Amp** — distributed / remote operator
 
 ## Out of scope for Wave 1
 
 - Claw-family forks and OpenClaw-style personal runtimes
 - Vibe app builders (Lovable, Bolt, v0, and similar generators)
-- Cross-lab model comparison (Claude vs Codex vs Grok as the primary axis)
+- **Claude Code** (not added this wave)
+- Treating Amp / FX / Codex as Grok-fixed, or treating Wave 1 as a full Claude-vs-Codex-vs-Grok bake-off
 
 ## Metrics (placeholders)
 
@@ -59,7 +68,7 @@ Protocol design is still open. Do **not** treat the following as a benchmark sui
 - [ ] Fixture repos / starting commits
 - [ ] Allowed tools / network / secrets
 - [ ] Time budget and stop conditions
-- [ ] How Grok model identity is pinned or recorded when a harness cannot lock it
+- [ ] How model identity is pinned or recorded (Grok slug on Grok-native SUTs; native routing on Amp / FX / Codex)
 - [ ] Artifact policy (logs, diffs, traces — no secrets, no billing dumps)
 
 Until those boxes are filled, Wave 1 remains **setup**.

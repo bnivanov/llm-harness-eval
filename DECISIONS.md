@@ -36,11 +36,19 @@ Format: date · decision · why · revisit when
 
 ## 2026-08-24 · Wave 1 is a Grok-model-driven harness comparison
 
-**Decision:** Wave 1 evaluates harness effect with Grok models held roughly fixed. Systems under test: **Grok Build**, **Pi** (earendil-works / pi.dev; OMP upstream/control), **OMP / Oh My Pi**, **Cursor Grok**, **Hermes Agent** (Nous Research), and **Prime Agent** (try; Grok often needs `XAI_API_KEY`, SuperGrok OAuth may be incomplete). Optional follow-ons (OpenCode, Amp) are not Wave 1 blockers. Claw-family forks and vibe app builders are out of scope for this wave.
+**Decision:** Wave 1 evaluates harness effect. **Grok-native cluster** (Grok held roughly fixed): **Grok Build**, **Pi** (earendil-works / pi.dev; OMP upstream/control), **OMP / Oh My Pi**, **Cursor Grok**, **Hermes Agent** (Nous Research), and **Prime Agent** (try; Grok often needs `XAI_API_KEY`, SuperGrok OAuth may be incomplete). **Matrix expansion** (native routing; not Grok-only): **Amp**, **FX** (Vercel Labs), **Codex CLI** (OpenAI-native baseline). Optional follow-on: OpenCode. Claw-family forks, vibe app builders, and Claude Code are out of scope for this wave.
 
-**Why:** Research question 1 is harness-not-model. Starting with one model family (Grok) isolates orchestration differences and matches available native/CLI surfaces. A broad multi-lab bake-off would confound model with harness. **Pi** is in the SUT set so OMP is not treated as the whole Pi lineage — Pi is the minimal upstream control; OMP is the community wrapper. Hermes is in the SUT set because its docs report SuperGrok / xAI OAuth, a useful Grok-native comparison point against lab CLI, Pi/OMP, Cursor, and Prime Agent. Those are documentation/taxonomy claims — not install or eval results.
+**Why:** Research question 1 is harness-not-model. Starting with one model family (Grok) isolates orchestration differences on the Grok-capable surfaces. **Pi** is in the SUT set so OMP is not treated as the whole Pi lineage. Hermes is in because its docs report SuperGrok / xAI OAuth. Amp / FX / Codex were added as requested installs to widen the matrix; claiming they are Grok-fixed would confound the original control.
 
-**Revisit:** After Wave 1 protocol exists and first pilots are logged; expand SUTs only if a listed optional harness is needed to interpret Grok-native results.
+**Revisit:** After Wave 1 protocol exists and first pilots are logged.
+
+## 2026-08-24 · Wave 1 matrix expansion is not a Grok-only claim
+
+**Decision:** Amp (ampcode.com → `amp`), FX (vercel-labs/fx → `fx`), and Codex CLI (OpenAI → `codex`) are Wave 1 SUTs. Log each run with the harness’s actual provider/model. Codex is a **cross-lab baseline**, not a Grok-native SUT. Amp uses its own routing. FX typically uses Vercel / Vercel AI Gateway.
+
+**Why:** Mixing “Grok held fixed” with lab-locked or gateway-routed harnesses without labeling the routing would invalidate the Grok-native contrast. Honest metadata is cheaper than a fake single-model story.
+
+**Revisit:** If Amp or FX later expose a stable Grok route worth a controlled subsample; still keep Codex labeled OpenAI-native.
 
 ## 2026-08-24 · Heavy repo work via Cursor cloud agents
 

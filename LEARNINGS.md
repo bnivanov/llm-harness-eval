@@ -10,9 +10,10 @@
 
 ## 2026-08-24 — Wave 1 operating constraints (pre-eval)
 
-- First scored wave is **Grok-native**: hold Grok roughly fixed, vary harness. Pointer: [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md).
+- First scored wave is **Grok-native at the core**, with a **matrix expansion**: Amp, FX, Codex CLI. Pointer: [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md). Do not treat expansion SUTs as Grok-fixed.
 - **Pi** (earendil-works / pi.dev) is a Wave 1 SUT as the **minimal upstream / control** for OMP — not a duplicate of OMP.
 - **Hermes Agent** is a Wave 1 SUT (not optional-next): docs report SuperGrok / xAI OAuth. That is not an install or scored-run result.
+- **Amp** uses its own model routing; **FX** typically Vercel / AI Gateway; **Codex CLI** is OpenAI-native. Log routing per run.
 - **Prime Agent** is worth trying on Grok, but API-key `xai` (`XAI_API_KEY`) is the reliable path today; SuperGrok OAuth looks incomplete relative to Hermes / OMP.
 - Personal billing / token-spend artifacts remain local-only; Wave 1 cost metrics, if any, come from harness-reported usage — not private dashboards.
 
