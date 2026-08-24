@@ -11,7 +11,7 @@ Legend: `confidence` high = readable name or confidently mapped logo · med = pl
 
 | Name (as shown) | Kind | Confidence | Notes |
 |-----------------|------|------------|-------|
-| HERMES-AGENT | harness | high | Learning / memory-oriented agent |
+| HERMES-AGENT | harness | high | Nous Research; Wave 1 SUT (SuperGrok / xAI OAuth in docs) — [wave doc](waves/wave-1-grok-native.md) |
 | amp / ampp | harness | high | Amp (distributed / remote operator; Sourcegraph lineage in press) |
 | OpenClaw | runtime/gateway | high | Multi-channel gateway; often orchestrates other harnesses |
 | Reasonix | harness | high | |
@@ -147,7 +147,7 @@ Prioritize for native harness evals (sources: zero8.dev State of Agentic Harness
 
 ## D. Taxonomy tags (for filtering)
 
-- **Wave 1 shortlist (Grok-native; see [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md)):** Grok Build, OMP / Oh My Pi, Cursor Grok, Prime Agent (try). Optional next, not blockers: Pi (upstream), Hermes, OpenCode, Amp. Out of this wave: Claw-family forks, vibe app builders.
+- **Wave 1 shortlist (Grok-native; see [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md)):** Grok Build, OMP / Oh My Pi, Cursor Grok, Hermes Agent, Prime Agent (try). Optional next, not blockers: Pi (upstream), OpenCode, Amp. Out of this wave: Claw-family forks, vibe app builders.
 - **Core CLI harnesses (pilot shortlist draft):** Claude Code, Codex CLI, OpenCode, Aider, Cline, Kilo Code CLI, Hermes Agent, Pi, Amp, Goose, Gemini CLI / Antigravity, cursor-agent  
 - **IDE harnesses:** Cursor, Copilot, Continue, Devin Desktop, Zed AI, Roo Code, Kilo (extension)  
 - **Autonomous / cloud:** Devin, Factory Droid, Codex cloud agents, Cursor cloud agents  

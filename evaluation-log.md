@@ -22,7 +22,7 @@ Do not record scores until a run happens. Wave headers may exist in `setup` with
 
 - **Status:** setup
 - **Control:** Grok models held roughly fixed; harness varies
-- **SUTs:** Grok Build (`grok`), OMP / Oh My Pi (`omp`), Cursor Grok (IDE agent), Prime Agent (`prime-agent`, try)
-- **Optional next (not this wave):** Pi (upstream), Hermes, OpenCode, Amp
+- **SUTs:** Grok Build (`grok`), OMP / Oh My Pi (`omp`), Cursor Grok (IDE agent), Hermes Agent (`hermes`), Prime Agent (`prime-agent`, try)
+- **Optional next (not this wave):** Pi (upstream), OpenCode, Amp
 - **Runs:** none yet — no task ids, no metrics
 - **Wave doc:** [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md)
