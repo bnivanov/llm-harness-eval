@@ -36,6 +36,7 @@ Hold models as controlled as practical and measure how much **harness choice** c
 | [`possible-harnesses.md`](possible-harnesses.md) | Master candidate list |
 | [`evaluation-log.md`](evaluation-log.md) | Running log of what we evaluate and when |
 | [`research/`](research/) | Notes and landscape memos |
+| [`waves/`](waves/) | Per-wave scope and reviews |
 | [`assets/`](assets/) | Public screenshots / source images (non-personal) |
 
 ## Privacy note — token spend stays private
@@ -60,6 +61,10 @@ Do not open PRs that add those files; `.gitignore` is set to keep them out if dr
 ## Assets
 
 - `assets/tier-list-source.jpg` — community tier-list image used **only** to discover harness names (placements ignored).
+
+## Waves
+
+- [`waves/wave-1-adversarial-review.md`](waves/wave-1-adversarial-review.md) — adversarial review of Wave 1 harness selection (PR #1 SUT set). Recommends split tracks; no scores.
 
 ## Research
 

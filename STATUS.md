@@ -1,10 +1,10 @@
 # Status
 
-**Updated:** 2026-08-24 ~10:22 Europe/Rome
+**Updated:** 2026-08-24
 
 ## Phase
 
-`0 — Project bootstrap` → moving to protocol design
+`0 — Project bootstrap` → protocol design, with Wave 1 SUT set under adversarial review
 
 ## Now
 
@@ -14,14 +14,17 @@
 - [x] First-pass harness extraction + broader missing list
 - [x] Public GitHub: https://github.com/bnivanov/llm-harness-eval
 - [x] Token spend tracker (private/local `TOKEN-SPEND.md` only; weekday snapshots)
-- [ ] Agree evaluation protocol (tasks + metrics)
+- [x] Adversarial review of Wave 1 SUT selection — [`waves/wave-1-adversarial-review.md`](waves/wave-1-adversarial-review.md) (attacks PR #1 / `waves/wave-1-grok-native.md`; no scores)
+- [ ] Agree evaluation protocol (tasks + metrics) — review says **do not score Wave 1 until Track A is frozen** (Grok Build × Pi × OMP, pinned slug/auth, 3 tasks)
 - [ ] First pilot eval entry in `evaluation-log.md`
 
 ## Blockers
 
 - Several image logos still unresolved (hexagon cluster, white K, etc.)
+- Wave 1 membership vs thesis: nine-SUT “Grok-native + matrix” set is not a hold-Grok-fixed design (see adversarial review)
 
 ## Next up
 
-1. Draft v0 evaluation protocol + shortlist for first pilots
-2. Spelling/verification pass on unverified names (Soulforge, Aizen, …)
+1. Decide keep/cut/split from [`waves/wave-1-adversarial-review.md`](waves/wave-1-adversarial-review.md) before more installs become “the eval”
+2. Draft v0 evaluation protocol for **Track A only** (pinned Grok slug + auth, 3 pre-declared tasks, headless)
+3. Spelling/verification pass on unverified names (Soulforge, Aizen, …)

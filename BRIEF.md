@@ -48,6 +48,7 @@ A **runtime / gateway** (e.g. OpenClaw) may orchestrate multiple harnesses; we t
 | `possible-harnesses.md` | Master candidate list |
 | `evaluation-log.md` | Running log of what we evaluate and when |
 | `research/` | Notes, source dumps, scratch |
+| `waves/` | Per-wave SUT scope and reviews |
 | `assets/` | Screenshots, charts, source images |
 
 ## Success for v0
