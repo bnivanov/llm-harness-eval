@@ -36,6 +36,7 @@ Hold models as controlled as practical and measure how much **harness choice** c
 | [`possible-harnesses.md`](possible-harnesses.md) | Master candidate list |
 | [`evaluation-log.md`](evaluation-log.md) | Running log of what we evaluate and when |
 | [`research/`](research/) | Notes and landscape memos |
+| [`landscape/`](landscape/) | Ongoing maps (subscription vs BYOK × surface) |
 | [`waves/`](waves/) | Per-wave scope and reviews |
 | [`assets/`](assets/) | Public screenshots / source images (non-personal) |
 
@@ -52,7 +53,7 @@ Do not open PRs that add those files; `.gitignore` is set to keep them out if dr
 ## How to contribute findings
 
 1. Read `BRIEF.md` and the latest `STATUS.md`.
-2. Prefer adding candidates or clarifying taxonomy in `possible-harnesses.md` (kind: harness / runtime-gateway / ambiguous).
+2. Prefer adding candidates or clarifying taxonomy in `possible-harnesses.md` (kind: harness / runtime-gateway / ambiguous). For **who pays × which surface**, update [`landscape/agentic-tools-subscription-vs-byok.md`](landscape/agentic-tools-subscription-vs-byok.md).
 3. Record durable methodology choices in `DECISIONS.md` (date · decision · why · revisit when).
 4. Capture durable insights in `LEARNINGS.md`.
 5. Log concrete eval runs in `evaluation-log.md` using the template there (task id, model/routing, metrics, artifacts, pass/fail/partial).
@@ -65,6 +66,10 @@ Do not open PRs that add those files; `.gitignore` is set to keep them out if dr
 ## Waves
 
 - [`waves/wave-1-adversarial-review.md`](waves/wave-1-adversarial-review.md) — adversarial review of Wave 1 harness selection (PR #1 SUT set). Recommends split tracks; no scores.
+
+## Landscape
+
+- [`landscape/agentic-tools-subscription-vs-byok.md`](landscape/agentic-tools-subscription-vs-byok.md) — canonical map: subscription-bundled vs BYOK vs hybrid, by surface.
 
 ## Research
 

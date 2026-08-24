@@ -15,6 +15,7 @@
 - [x] Public GitHub: https://github.com/bnivanov/llm-harness-eval
 - [x] Token spend tracker (private/local `TOKEN-SPEND.md` only; weekday snapshots)
 - [x] Adversarial review of Wave 1 SUT selection — [`waves/wave-1-adversarial-review.md`](waves/wave-1-adversarial-review.md) (attacks PR #1 / `waves/wave-1-grok-native.md`; no scores)
+- [x] Canonical landscape: subscription vs BYOK × surface — [`landscape/agentic-tools-subscription-vs-byok.md`](landscape/agentic-tools-subscription-vs-byok.md)
 - [ ] Agree evaluation protocol (tasks + metrics) — review says **do not score Wave 1 until Track A is frozen** (Grok Build × Pi × OMP, pinned slug/auth, 3 tasks)
 - [ ] First pilot eval entry in `evaluation-log.md`
 

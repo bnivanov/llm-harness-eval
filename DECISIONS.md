@@ -34,6 +34,14 @@ Format: date · decision · why · revisit when
 
 **Revisit:** Never for raw spend artifacts.
 
+## 2026-08-24 · Canonical billing/surface map lives in landscape/
+
+**Decision:** Maintain `landscape/agentic-tools-subscription-vs-byok.md` as the ongoing reference for **subscription vs BYOK vs hybrid × surface**. Name inventory stays in `possible-harnesses.md`; wave membership stays in `waves/`.
+
+**Why:** Wave 1 already mixed auth economies. A two-axis map (who pays × where the loop runs) is cheaper than rediscovering Devin-as-BYOK or OpenClaw-as-harness every pass.
+
+**Revisit:** When a vendor ships a new auth path (or sunsets one); stamp `Last verified` in that file.
+
 ## 2026-08-24 · Heavy repo work via Cursor cloud agents
 
 **Decision:** All non-trivial development on `bnivanov/llm-harness-eval` is done by **Cursor cloud agents**. Harness Reviewer (Grok Bot) steers, scopes, dispatches, reviews results, and keeps light continuity files — it does not burn Bot quota on heavy coding.

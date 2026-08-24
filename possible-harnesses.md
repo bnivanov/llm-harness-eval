@@ -2,6 +2,7 @@
 
 Master candidate list for **native LLM coding harness** evaluation.  
 Tier placement from the community image is **ignored** (discovery only).  
+Billing / surface map: [`landscape/agentic-tools-subscription-vs-byok.md`](landscape/agentic-tools-subscription-vs-byok.md).  
 **Updated:** 2026-08-24
 
 Legend: `confidence` high = readable name or confidently mapped logo · med = plausible logo map · low = logo-only / ambiguous  

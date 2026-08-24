@@ -48,6 +48,7 @@ A **runtime / gateway** (e.g. OpenClaw) may orchestrate multiple harnesses; we t
 | `possible-harnesses.md` | Master candidate list |
 | `evaluation-log.md` | Running log of what we evaluate and when |
 | `research/` | Notes, source dumps, scratch |
+| `landscape/` | Ongoing tools map (subscription vs BYOK × surface) — start at `landscape/agentic-tools-subscription-vs-byok.md` |
 | `waves/` | Per-wave SUT scope and reviews |
 | `assets/` | Screenshots, charts, source images |
 
