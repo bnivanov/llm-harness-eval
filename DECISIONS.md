@@ -36,9 +36,9 @@ Format: date · decision · why · revisit when
 
 ## 2026-08-24 · Wave 1 is a Grok-model-driven harness comparison
 
-**Decision:** Wave 1 evaluates harness effect with Grok models held roughly fixed. Systems under test: **Grok Build**, **OMP / Oh My Pi**, **Cursor Grok**, **Hermes Agent** (Nous Research), and **Prime Agent** (try; Grok often needs `XAI_API_KEY`, SuperGrok OAuth may be incomplete). Optional follow-ons (Pi, OpenCode, Amp) are not Wave 1 blockers. Claw-family forks and vibe app builders are out of scope for this wave.
+**Decision:** Wave 1 evaluates harness effect with Grok models held roughly fixed. Systems under test: **Grok Build**, **Pi** (earendil-works / pi.dev; OMP upstream/control), **OMP / Oh My Pi**, **Cursor Grok**, **Hermes Agent** (Nous Research), and **Prime Agent** (try; Grok often needs `XAI_API_KEY`, SuperGrok OAuth may be incomplete). Optional follow-ons (OpenCode, Amp) are not Wave 1 blockers. Claw-family forks and vibe app builders are out of scope for this wave.
 
-**Why:** Research question 1 is harness-not-model. Starting with one model family (Grok) isolates orchestration differences and matches available native/CLI surfaces. A broad multi-lab bake-off would confound model with harness. Hermes is in the SUT set (not optional-next) because its docs report SuperGrok / xAI OAuth, which is a useful Grok-native comparison point against lab CLI, OMP, Cursor, and Prime Agent. That is a documentation claim — not an install or eval result.
+**Why:** Research question 1 is harness-not-model. Starting with one model family (Grok) isolates orchestration differences and matches available native/CLI surfaces. A broad multi-lab bake-off would confound model with harness. **Pi** is in the SUT set so OMP is not treated as the whole Pi lineage — Pi is the minimal upstream control; OMP is the community wrapper. Hermes is in the SUT set because its docs report SuperGrok / xAI OAuth, a useful Grok-native comparison point against lab CLI, Pi/OMP, Cursor, and Prime Agent. Those are documentation/taxonomy claims — not install or eval results.
 
 **Revisit:** After Wave 1 protocol exists and first pilots are logged; expand SUTs only if a listed optional harness is needed to interpret Grok-native results.
 

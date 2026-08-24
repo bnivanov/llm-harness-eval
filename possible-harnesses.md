@@ -137,7 +137,8 @@ Prioritize for native harness evals (sources: zero8.dev State of Agentic Harness
 | JetBrains AI / Juni | harness | IDE agent surface |
 | Qwen Code / Kimi CLI | harness | Strong CN CLI agents in 2026 roundups |
 | Grok Build | harness | xAI native CLI (`grok`); Wave 1 SUT — [wave doc](waves/wave-1-grok-native.md) |
-| Oh My Pi / Oh My OpenCode | harness | OMP (`omp`) is Wave 1 SUT; Oh My OpenCode remains a separate wrapper |
+| Pi | harness | earendil-works / pi.dev; Wave 1 SUT — **OMP upstream/control** |
+| Oh My Pi / Oh My OpenCode | harness | OMP (`omp`) is Wave 1 SUT vs upstream Pi; Oh My OpenCode remains a separate wrapper |
 | Prime Agent | harness | Prime Intellect CLI; Wave 1 try-path (Grok often via `XAI_API_KEY`) |
 | OpenHarness | runtime/gateway | Python multi-harness runtime (secondary sources) |
 | Superpowers | skills layer | Not a coding harness; track as skills layer |
@@ -147,7 +148,7 @@ Prioritize for native harness evals (sources: zero8.dev State of Agentic Harness
 
 ## D. Taxonomy tags (for filtering)
 
-- **Wave 1 shortlist (Grok-native; see [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md)):** Grok Build, OMP / Oh My Pi, Cursor Grok, Hermes Agent, Prime Agent (try). Optional next, not blockers: Pi (upstream), OpenCode, Amp. Out of this wave: Claw-family forks, vibe app builders.
+- **Wave 1 shortlist (Grok-native; see [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md)):** Grok Build, Pi (OMP upstream/control), OMP / Oh My Pi, Cursor Grok, Hermes Agent, Prime Agent (try). Optional next, not blockers: OpenCode, Amp. Out of this wave: Claw-family forks, vibe app builders.
 - **Core CLI harnesses (pilot shortlist draft):** Claude Code, Codex CLI, OpenCode, Aider, Cline, Kilo Code CLI, Hermes Agent, Pi, Amp, Goose, Gemini CLI / Antigravity, cursor-agent  
 - **IDE harnesses:** Cursor, Copilot, Continue, Devin Desktop, Zed AI, Roo Code, Kilo (extension)  
 - **Autonomous / cloud:** Devin, Factory Droid, Codex cloud agents, Cursor cloud agents  

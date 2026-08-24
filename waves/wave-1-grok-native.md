@@ -15,7 +15,8 @@ It is not a general model bake-off and not a ranking of every CLI on the candida
 | SUT | Surface | Install / entry | Notes |
 |-----|---------|-----------------|-------|
 | **Grok Build** | xAI native CLI/TUI | `curl -fsSL https://x.ai/cli/install.sh \| bash` → `grok` | Lab-native harness. Sources: [x.ai/cli](https://x.ai/cli), [xai-org/grok-build](https://github.com/xai-org/grok-build). |
-| **OMP / Oh My Pi** | Community Pi-lineage CLI | `curl -fsSL https://omp.sh/install \| sh` → `omp` | [omp.sh](https://omp.sh) / [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi). xAI + SuperGrok OAuth documented. |
+| **Pi** | earendil-works minimal CLI | `curl -fsSL https://pi.dev/install.sh \| sh` → `pi` (alt: `npm i -g --ignore-scripts @earendil-works/pi-coding-agent`) | **OMP upstream / control.** Minimal harness ([pi.dev](https://pi.dev), [earendil-works/pi](https://github.com/earendil-works/pi)). Include so OMP deltas are measured against Pi rather than treated as a single lineage. Install/auth not yet recorded. |
+| **OMP / Oh My Pi** | Community Pi-lineage CLI | `curl -fsSL https://omp.sh/install \| sh` → `omp` | [omp.sh](https://omp.sh) / [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi). xAI + SuperGrok OAuth documented. Compare against **Pi** (upstream control), not as a substitute for it. |
 | **Cursor Grok** | Cursor IDE agent | Cursor IDE, Grok models in agent mode | IDE-embedded coding loop (this surface), not a second CLI install. |
 | **Hermes Agent** | Nous Research CLI | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh \| bash` → `hermes` | First-class SUT. Docs report SuperGrok / xAI OAuth (`xai-oauth`). Sources: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent), [xAI Grok OAuth guide](https://hermes-agent.nousresearch.com/docs/guides/xai-grok-oauth). Install/auth not yet recorded. |
 | **Prime Agent** | Prime Intellect CLI | try: `curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh \| sh` → `prime-agent` | Include if Grok routing works. Grok often needs `XAI_API_KEY`; SuperGrok OAuth may be incomplete (community `xai-oauth` work not clearly landed). |
@@ -26,7 +27,6 @@ Auth, binary version, and exact Grok model slug are **run metadata**, not result
 
 These are plausible Grok-capable follow-ons. Do not delay Wave 1 on them:
 
-- **Pi** (upstream / earendil-works) — minimal harness OMP is built on
 - **OpenCode** — large OSS terminal agent
 - **Amp** — distributed / remote operator
 

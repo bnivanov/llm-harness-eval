@@ -64,7 +64,7 @@ Do not open PRs that add those files; `.gitignore` is set to keep them out if dr
 
 ## Waves
 
-- [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md) — Wave 1: Grok models held roughly fixed; harnesses Grok Build, OMP, Cursor Grok, Hermes Agent, Prime Agent. Setup only; no scores yet.
+- [`waves/wave-1-grok-native.md`](waves/wave-1-grok-native.md) — Wave 1: Grok models held roughly fixed; harnesses Grok Build, Pi (OMP upstream/control), OMP, Cursor Grok, Hermes Agent, Prime Agent. Setup only; no scores yet.
 
 ## Research
 
