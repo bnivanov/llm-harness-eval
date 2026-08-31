@@ -73,6 +73,7 @@ Do not open PRs that add those files; `.gitignore` is set to keep them out if dr
 
 ## Research
 
+- [`research/omp-vs-prime-agent.md`](research/omp-vs-prime-agent.md) — feature deep dive: OMP vs Prime Agent (Pi-lineage; no scores).
 - `research/llm-coding-harness-landscape-2026-08.md` — mid-2026 landscape notes.
 
 ## License / reuse
