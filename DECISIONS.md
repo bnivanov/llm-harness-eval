@@ -49,3 +49,11 @@ Format: date · decision · why · revisit when
 **Why:** Conserve Grok Bot included usage; cloud agents are the stronger coding path for the repo.
 
 **Revisit:** Only if Bobby explicitly wants Bot-side edits for a small continuity tweak.
+
+## 2026-09-05 · Standardize harness evaluation on HarnessRouter (UHP) over Herdr/ad-hoc scripts
+
+**Decision:** Standardize all programmatic harness evaluation on **HarnessRouter** (implementing the Unified Harness Protocol) rather than Herdr or ad-hoc subshell scripts. Reserve Herdr for interactive human-in-the-loop terminal supervision.
+
+**Why:** Herdr operates strictly at the terminal (PTY) emulation layer—it cannot manage desktop GUI apps, relies on fragile screen buffer scraping/ANSI parsing, and lacks structured token/cost accounting and model-fixed proxy controls. HarnessRouter standardizes harnesses (Codex, Claude Code, Pi, OMP, OpenCode) behind a headless HTTP `/turn` API, provides normalized event streaming (`tool_call`, `tool_result`, `text_delta`), enables model-fixed routing, and enforces 64+ UHP conformance tests.
+
+**Revisit:** If a harness cannot be run in headless/containerized mode and strictly requires an interactive PTY that cannot be automated via UHP.

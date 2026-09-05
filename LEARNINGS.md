@@ -27,4 +27,10 @@ Pointer: [`landscape/agentic-tools-subscription-vs-byok.md`](landscape/agentic-t
 - SuperGrok OAuth and `XAI_API_KEY` are different ledgers; same for Claude `/login` vs `ANTHROPIC_API_KEY` and ChatGPT Codex vs API key.
 - Cursor Grok (plan SKU) ≠ Grok Build CLI ≠ Grok Bot.
 
+## 2026-09-05 — Herdr agent management and evaluation boundaries
+
+- **Herdr architecture**: A terminal multiplexer and workspace daemon (`Session` → `Workspace` → `Tab` → `Pane`) purpose-built for AI coding agents. Operates on POSIX pseudoterminals (PTYs), detects lifecycle states (`idle`, `working`, `blocked`, `done`, `unknown`) via screen buffer inspection and agent hook scripts (`~/.claude/hooks`, `~/.omp/...`, `~/.codex/`).
+- **Herdr scope & limits**: Supports CLI/TUI agents natively (`codex`, `claude`, `pi`, `omp`, `hermes`, `opencode`), but **cannot** host, embed, or inspect desktop/GUI apps (such as the ChatGPT desktop app or Codex/Cursor IDE window). GUI applications run detached from the PTY and require OS-level accessibility/screen automation.
+- **Benchmarking methodology**: Herdr is ideal for interactive multi-agent orchestration and live TUI inspection, but unsuitable for scientific harness benchmarking due to ANSI/alternate-screen parsing fragility, absence of provider-level token/cache accounting, and lack of model-fixed proxy controls. Use HarnessRouter (UHP) as the formal headless evaluation engine.
+
 *(Pilot eval learnings go below this line.)*
