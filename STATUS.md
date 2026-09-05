@@ -1,6 +1,6 @@
 # Status
 
-**Updated:** 2026-08-24
+**Updated:** 2026-09-05
 
 ## Phase
 
@@ -16,6 +16,7 @@
 - [x] Token spend tracker (private/local `TOKEN-SPEND.md` only; weekday snapshots)
 - [x] Adversarial review of Wave 1 SUT selection — [`waves/wave-1-adversarial-review.md`](waves/wave-1-adversarial-review.md) (attacks PR #1 / `waves/wave-1-grok-native.md`; no scores)
 - [x] Canonical landscape: subscription vs BYOK × surface — [`landscape/agentic-tools-subscription-vs-byok.md`](landscape/agentic-tools-subscription-vs-byok.md)
+- [x] Infrastructure milestone: integrated Oh My Pi (`omp`) backend into HarnessRouter ([PR #68](https://github.com/HarnessRouter/harnessrouter/pull/68)) to support headless UHP evaluation across Pi and OMP
 - [ ] Agree evaluation protocol (tasks + metrics) — review says **do not score Wave 1 until Track A is frozen** (Grok Build × Pi × OMP, pinned slug/auth, 3 tasks)
 - [ ] First pilot eval entry in `evaluation-log.md`
 
